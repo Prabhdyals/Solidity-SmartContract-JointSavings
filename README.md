@@ -1,6 +1,5 @@
 Solidity "Joint Savings Account"
 
-![alt=“”](Images/20-5-challenge-image.png)
 
 ### Background
 
@@ -28,40 +27,28 @@ following steps were accomplished:
 3. Interacted with deployed smart contract to transfer and withdraw funds.
 #### Step 2: Interaction with Deployed Smart Contract
 
-Now that contract is deployed, it’s time to test its functionality! After each step, captured a screenshot of the execution, and then saved it in a folder named `Execution_Results`. Shared this folder with files.
+After Deploying the contract, it’s time to test its functionality! After each step, captured a screenshot of the execution, and then saved it in a folder named `Execution_Results`. Shared this folder with files.
 
 To show interaction with deployed smart contract, completed the following steps:
 
 1. Used the `setAccounts` function to define the authorized Ethereum address that will be able to withdraw funds from your contract.
+![alt=“”](Execution_Results/Screenshot1.png)
+![alt=“”](Execution_Results/Screenshot3.png)
 
-     > **Note** You can either use the following Ethereum addresses or create new, dummy addresses on the [Vanity-ETH](https://vanity-eth.tk/) website, which includes an Ethereum vanity address generator.
-    >
-    > ```text
-    > Dummy account1 address: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
-    > Dummy account2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
-    > ```
-
-2. Test the deposit functionality of your smart contract by sending the following amounts of ether. After each transaction, use the `contractBalance` function to verify that the funds were added to your contract:
-
+2. Tested the deposit functionality of smart contract by sending the following amounts of ether. After transactions, used the `contractBalance` function to verify that the funds were added to the contract:
     * Transaction 1: Send 1 ether as wei.
-
     * Transaction 2: Send 10 ether as wei.
-
     * Transaction 3: Send 5 ether.
+![alt=“”](Execution_Results/Screenshot4.png)
 
-    > **Note** Remembering how to convert ether to wei and vice versa can be challenging. So, you can use a website like [Ethereum Unit Converter](https://eth-converter.com/) to ease doing the conversion.
+3. After successfully depositing funds into contract, tested the contract’s withdrawal functionality by 
 
-3. Once you’ve successfully deposited funds into your contract, test the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, use the `contractBalance` function to verify that the funds were withdrawn from your contract. Also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
+    * Withdrawing 5 ether into `accountOne`.
+    ![alt=“”](Execution_Results/Screenshot5.png)
+    * Withdrawing 10 ether into `accountTwo`. 
+    ![alt=“”](Execution_Results/Screenshot6.png)
+    * After each transaction, used the `contractBalance` function to verify that the funds were withdrawn from   contract. 
+    * Used the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
+    ![alt=“”](Execution_Results/Screenshot7.png)
 
 ---
-
-### Submission
-
-* Upload the files for this assignment to your GitHub repository.
-
-* Submit the link to your GitHub repo on Bootcamp Spot.
-
----
-
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
